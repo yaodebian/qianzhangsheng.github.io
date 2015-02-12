@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+img{
+  border:none;
+  outline:none;
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+input, textarea {
+  outline: none; 
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+body{font-family:Microsoft Yahei;font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<script src="../../jquery-1.11.2.min.js"></script>
+	<script>
+	/* iframe自动高度 */
+	var adjustIframe = function(id) {
+		var iframe = document.getElementById(id)
+
+		var callback = function() {
+			var idoc = iframe.contentWindow && iframe.contentWindow.document || iframe.contentDocument;
+			var iheight = Math.max(idoc.body.scrollHeight, idoc.documentElement.scrollHeight); //取得其高
+			//window.console && window.console.log(iheight);
+			iframe.style.height = iheight + "px";
+		};
+		if (iframe.attachEvent) {
+			iframe.attachEvent("onload", callback);
+		} else {
+			iframe.onload = callback
+		}
+	};
+
+	$(document).ready(function() {
+		adjustIframe("userRight");
+	});
+	</script>
+</head>
+<body>
+	<iframe id="userRight" name="userRight" width="100%" frameborder="0" scrolling="no" allowTransparency="true" src="test.html"></iframe>
+</body>
+</html>

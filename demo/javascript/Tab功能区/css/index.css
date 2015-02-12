@@ -1,0 +1,31 @@
+@charset "utf-8";
+body {margin:0px;border:0px;font-size:12px;background-color:#fff;} 
+a:link{color: #003278;text-decoration: none;} 
+a:visited{color: #003278;text-decoration: none;} 
+a:hover{color: #FF6600;text-decoration: underline;} 
+.slideBox{background:url(../img/slideBox_bg.gif);height:168px;width:178px;padding-left:5px;padding-right:5px;} 
+.slide{padding-top:5px} 
+.slide li ../img{margin-right:3px} 
+.slideBox ul{padding:0;margin:0;clear:both;list-style:none;overflow:hidden} 
+.slideBox li{float:left;font-weight:bold;height:37px !important;height:27px;} 
+.slideBox li a:link,.slideBox li a:visited{color:#000;} 
+.slideBox li a:hover{color:#ff7300;text-decoration: none} 
+.slideBox .l{background:url(../img/slideBox_tableft.gif);width:80px;} 
+.slideBox .r{background:url(../img/slideBox_tabright.gif);width:94px;float:right} 
+.slideBox .l_h{background:url(../img/slideBox_tableft_h.gif);width:80px;} 
+.slideBox .r_h{background:url(../img/slideBox_tabright_h.gif);width:94px;float:right;} 
+.slideBox .hide{display:none} 
+.slideBox .l a{width:52px;} 
+.slideBox .r a{width:68px;} 
+.arrow{padding-left:8px;background:url(../img/icon_arrow03_right_08x.gif) no-repeat;} 
+.slideBox .l a,.slideBox .r a,.slideBox .l_h a,.slideBox .r_h a{padding-left:24px;display:block;height:100%;padding-top:10px;} 
+.btn_zchy{background:url(../img/icon_zchy01_12x.gif) 5px 10px no-repeat;} 
+.btn_cxt{background:url(../img/icon_cxt01_12x.gif) 5px 10px no-repeat;} 
+.btn_tggs{background:url(../img/icon_tggs01_12x.gif) 5px 10px no-repeat;} 
+.btn_fbxx{background:url(../img/icon_fbxx01_12x.gif) 5px 10px no-repeat;} 
+.btn_xzmj{background:url(../img/icon_xzmj01_12x.gif) 5px 10px no-repeat;} 
+.btn_alisoft{background:url(../img/icon_alisoft01_12x.gif) 5px 10px no-repeat;} 
+/*cont*/ 
+.slideBox .cont_l{float:left;background:url(../img/slideBox_conleft.gif);width:157px;height:31px;padding:9px 7px 7px 14px;margin-bottom:4px;overflow:hidden} 
+.slideBox .cont_r{float:left;background:url(../img/slideBox_conright.gif);width:157px;height:31px;padding:9px 7px 7px 14px;margin-bottom:4px;overflow:hidden} 
+.slideBox .oneline{line-height:33px;} 

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>通过单选框切换的菜单</title>
+<meta http-equiv="content-type" content="text/html;charset=gb2312">
+<!--把下面代码加到<head>与</head>之间-->
+<style type="text/css">
+fieldset{width:378px;border:1px #B0C0D1 solid;padding:10px;}
+legend{background:#B0C0D1;padding:4px 10px;color:#fff;}
+#c{margin-top:10px;}
+.c1,.c2{width:378px;line-height:20px;}
+.c1{color:#014CC9;}
+.c2{color:#7E6095;}
+h3{font-size:16px;padding:5px 0;}
+.red{color:#BD0A01;}
+</style>
+<script type="text/javascript">
+function radioShow() {
+	var myradio = document.getElementsByName("myradio"); //获取标签名为myradio的标签
+	var div = document.getElementById("c").getElementsByTagName("div");
+	for (i = 0; i < div.length; i++) {
+		if (myradio[i].checked) {
+			div[i].style.display = "block";
+		} else {
+			div[i].style.display = "none";
+		}
+	}
+}
+</script>
+</head>
+<body>
+<!--把下面代码加到<body>与</body>之间-->
+<form name="ck">
+<fieldset>
+	<legend>I'm Radio</legend>
+	<h3>请选择您要学习的内容：</h3>
+	<label for="r1" class="red"><input name="myradio" id="r1" type="radio" value="" checked="checked" onclick="radioShow();" />XML教程</label>
+	<label for="r2" class="red"><input name="myradio" id="r2" type="radio" value=""  onclick="radioShow();" />浏览器脚本</label>
+	<div id="c">
+		<div class="c1">
+			<label for="xml"><input name="c2" type="checkbox" id="xml" value="" />XML</label>
+			<label for="dtd"><input name="c2" id="dtd" type="checkbox" value="" />DTD</label>
+			<label for="xmldom"><input name="c2" id="xmldom" type="checkbox" value="" />XML DOM</label>
+			<label for="xsl"><input name="c2" id="xsl" type="checkbox" value="" />XSL</label>
+			<label for="xslt"><input name="c2" id="xslt" type="checkbox" value="" />XSLT</label>
+			<label for="xslfo"><input name="c2" id="xslfo" type="checkbox" value="" />XSL-FO</label>
+			<label for="xpath"><input name="c2" id="xpath" type="checkbox" value="" />XPath</label>
+			<label for="xquery"><input name="c2" id="xquery" type="checkbox" value="" />XQuery</label>
+			<label for="xlink"><input name="c2" id="xlink" type="checkbox" value="" />XLink </label>
+			<label for="xpointer"><input name="c2" id="xpointer" type="checkbox" value="" />XPointer</label>
+			<label for="schema"><input name="c2" id="schema" type="checkbox" value="" />Schema</label>
+			<label for="xforms"><input name="c2" id="xforms" type="checkbox" value="" />XForms</label>
+		</div>
+			<div class="c2" style="display:none;">
+			<label for="js"><input name="c3" id="js" type="checkbox" value="" />JavaScript</label>
+			<label for="hd"><input name="c3" id="hd" type="checkbox" value="" />HTML DOM</label>
+			<label for="dhtml"><input name="c3" id="dhtml" type="checkbox" value="" />DHTML</label>
+			<label for="vbs"><input name="c3" id="vbs" type="checkbox" value="" />VBScript</label>
+			<label for="ajax"><input name="c3" id="ajax" type="checkbox" value="" />AJAX</label>
+			<label for="e4x"><input name="c3" id="e4x" type="checkbox" value="" />E4X</label>
+			<label for="wml"><input name="c3" id="wml" type="checkbox" value="" />WMLScript</label>
+		</div>
+	</div>
+</fieldset>
+</form>
+</body>
+</html>

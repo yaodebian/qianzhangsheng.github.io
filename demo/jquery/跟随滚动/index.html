@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <title></title>
+  <style type="text/css">
+    .zqyj {
+      width: 24px;
+      height: 70px;
+      position: absolute;
+      right: 4px;
+      bottom: 100px;
+    }
+  </style>
+  <script type="text/javascript" src="../../jquery-1.11.2.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      /* 执行征求意见 */
+      $(".zqyj").smartFloat();
+    });
+    /* 征求意见 */
+    $.fn.smartFloat = function () {
+      var position = function (element) {
+        $(window).scroll(function () {
+          var scrolls = $(this).scrollTop();
+          if (scrolls > 0) {
+            element.css({
+              position:"fixed",
+              bottom:100
+            });
+          }
+        });
+      };
+      return $(this).each(function () {
+        position($(this));
+      });
+    };
+  </script>
+</head>
+<body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="zqyj">
+  <a target="_blank" href="#"><img src="zqyj.gif" alt="征求意见"></a>
+</div>
+</body>
+</html>

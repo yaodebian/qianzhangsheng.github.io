@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+<div id="main">
+  <input class="bton pointer" onclick="openBg(1);openSelect(1)" type="button" value="请选择" name="button" />
+  <div id="result">
+    <div class="tit bgc_eee">
+      <h2>您已选择的城市汇总</h2>
+    </div>
+    <div class="cont" id="makeSureItem"></div>
+  </div>
+</div>
+<div id="bg"></div>
+<div class="hidden" id="selectItem">
+  <div class="tit bgc_ccc move" onmousedown="drag(event,this)">
+    <h2 class="left">请选择城市</h2>
+    <span class="pointer right" onclick="openBg(0);openSelect(0);">[取消]</span><span class="pointer right" onclick="makeSure();">[确定]</span></div>
+  <div class="cls"></div>
+  <div class="cont">
+    <div id="selectSub">
+      <select style="margin-bottom: 10px" onchange="showSelect(this.value)">
+        <option value="0" selected="selected">第0层</option>
+        <option value="1">第1层</option>
+        <option value="2">第2层</option>
+        <option value="3">第3层</option>
+      </select>
+      <div id="c00">
+        <input onclick="addPreItem()" type="checkbox" value="北京" name="ck00" />
+        <label>北京</label>
+        <input onclick="addPreItem()" type="checkbox" value="福建" name="ck00" />
+        <label>福建</label>
+        <input onclick="addPreItem()" type="checkbox" value="四川" name="ck00" />
+        <label>四川</label>
+        <input onclick="addPreItem()" type="checkbox" value="江苏" name="ck00" />
+        <label>江苏</label>
+      </div>
+      <div id="c01">
+        <input onclick="addPreItem()" type="checkbox" value="上海" name="ck01" />
+        <label>上海</label>
+        <input onclick="addPreItem()" type="checkbox" value="云南" name="ck01" />
+        <label>云南</label>
+        <input onclick="addPreItem()" type="checkbox" value="贵州" name="ck01" />
+        <label>贵州</label>
+      </div>
+      <div id="c02">
+        <input onclick="addPreItem()" type="checkbox" value="黑龙江" name="ck01" />
+        <label>黑龙江</label>
+        <input onclick="addPreItem()" type="checkbox" value="吉林" name="ck01" />
+        <label>吉林</label>
+        <input onclick="addPreItem()" type="checkbox" value="辽宁" name="ck01" />
+        <label>辽宁</label>
+      </div>
+      <div id="c03">
+        <input onclick="addPreItem()" type="checkbox" value="美国" name="ck01" />
+        <label>美国</label>
+        <input onclick="addPreItem()" type="checkbox" value="阿富汗" name="ck01" />
+        <label>阿富汗</label>
+        <input onclick="addPreItem()" type="checkbox" value="日本" name="ck01" />
+        <label>日本</label>
+      </div>
+    </div>
+  </div>
+  <div id="preview">
+    <div class="tit bgc_eee c_999">
+      <h2>您已选择的城市</h2>
+    </div>
+    <div class="cont" id="previewItem"></div>
+  </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

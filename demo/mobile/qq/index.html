@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>温暖新年 领礼回家</title>
+    <script>
+        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth + "px";
+    </script>
+    <link rel="stylesheet" href="css/parallax.css" />
+    <link rel="stylesheet" href="css/parallax-animation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<div class="musciBtn musicOff"></div>
+<div class="wrapper">
+    <section class="loadingWrap">
+        <div class="load"><span class="dotting"></span></div>
+    </section>
+    <div class="pages">
+        <!-- 第一屏 -->
+        <section class="page">
+            <div class="page1_text1"></div>
+            <div class="page1_text2"></div>
+        </section>
+        <!-- 第二屏 -->
+        <section class="page">
+            <div class="page2_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page2_text2" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+        </section>
+        <!-- 第三屏 -->
+        <section class="page">
+            <div class="page3_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page3_text2" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+            <div class="page3_text3" data-animation="followSlide" data-delay="1600" data-duration="1400"></div>
+        </section>
+        <!-- 第四屏 -->
+        <section class="page">
+            <div class="page4_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page4_text2" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+        </section>
+        <!-- 第五屏 -->
+        <section class="page">
+            <div class="page5_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page5_text2" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+            <div class="page5_text3" data-animation="followSlide" data-delay="1600" data-duration="2400"></div>
+        </section>
+        <!-- 第六屏 -->
+        <section class="page">
+            <div class="page6_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page6_text2" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+        </section>
+        <!-- 第七屏 -->
+        <section class="page">
+            <div class="page7_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page7_text2" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+            <div class="page7_text3" data-animation="followSlide" data-delay="1600" data-duration="1400"></div>
+        </section>
+        <!-- 第八屏 -->
+        <section class="page">
+            <div class="page8_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page8_text2" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+            <!-- <div class="page8_text3" data-animation="followSlide" data-delay="2600" data-duration="1400"></div> -->
+        </section>
+        <!-- 第九屏 -->
+        <section class="page">
+            <div class="page9_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page9_text2" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+        </section>
+        <!-- 第十屏 -->
+        <section class="page">
+            <div class="page10_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page10_text2" data-animation="followSlide" data-delay="600" data-duration="1400"></div>
+            <div class="page10_text3" data-animation="followSlide" data-delay="1000" data-duration="1400"></div>
+        </section>
+        <!-- 第十一屏 -->
+        <section class="page">
+            <div class="page11_text1" data-animation="followSlide" data-duration="1400"></div>
+            <div class="page11_text2" data-animation="followSlide" data-delay="600" data-duration="1400"></div>
+            <img src="img/code1.jpg" class="page11_text3">
+
+            <div class="page11_text4" id="share_btn" data-animation="followSlide" data-delay="1200" data-duration="1400"></div>
+            <div class="mark">
+                <div class="figger"></div>
+            </div>
+        </section>
+    </div>
+</div>
+<audio id="audio" src="mp3/music.mp3" loop="" preload="auto"></audio>
+<script>
+    var ua = navigator.userAgent;
+    var REGEXP_IOS_QQ = /(iPad|iPhone|iPod).*? (IPad)?QQ\/([\d\.]+)/;
+    var REGEXP_ANDROID_QQ = /\bV1_AND_SQI?_([\d\.]+)(.*? QQ\/([\d\.]+))?/;
+    var REGEXP_WECHAT = /MicroMessenger\/([\d\.]+)/;
+    var isIOSQQ = REGEXP_IOS_QQ.test(ua);
+    var isAndroidQQ = REGEXP_ANDROID_QQ.test(ua);
+    var isQQ = isIOSQQ || isAndroidQQ;
+    var isWechat = REGEXP_WECHAT.test(ua);
+    if (isWechat) {
+        document.write('<script src="js/jweixin-1.0.0.js"><\/script>');
+    } else if (isQQ) {
+        document.write('<script src="js/qqapi.js"><\/script>');
+    } else {
+        document.getElementById('share_btn').style.visibility = 'hidden';
+    }
+</script>
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

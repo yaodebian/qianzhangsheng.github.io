@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <style>
+ *{
+    margin:0;
+	padding:0;
+ }
+ #cssrain{
+	background:#BBB;
+	border:2px double #000000;
+	position:fixed;
+	right:0px;
+	bottom:0px;
+	height:200px;
+	width:200px;
+	padding:10px; /*添加padding*/
+ }
+ </style>
+ <script src="http://www.cssrain.cn/demo/1/SildeTab/jquery-1.2.6.pack.js" type="text/javascript"></script>
+ <script>
+	 $(document).ready(function(){
+	        /*FF和IE7可以通过position:fixed来定位，只有ie6需要动态设置高度.*/
+			if($.browser.msie && $.browser.version == 6) {
+				FollowDiv.follow();
+			}
+	 });
+	 FollowDiv = {
+			follow : function(){
+				$('#cssrain').css('position','absolute');
+				$(window).scroll(function(){
+				    var f_top = $(window).scrollTop() + $(window).height() - $("#cssrain").height() - parseFloat($("#cssrain").css("borderTopWidth")) - parseFloat($("#cssrain").css("borderBottomWidth"));
+					$('#cssrain').css( 'top' , f_top );
+				});
+			}
+	  }
+/*
+此例子中:
+放右下角的是时候，需要 滚动条高度+屏幕高度 - div高度（包括内边距，外边据，边框）
+*/
+ </script>
+</head>
+<body>
+<div style="width:100%;height:600px;">test</div>
+
+<div id="cssrain">
+跟随屏幕滚动的层
+</div>
+
+<div style="width:100%;height:600px;">test</div>
+</body>
+</html>
+

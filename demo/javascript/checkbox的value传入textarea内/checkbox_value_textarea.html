@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>checkbox的value传入textarea内</title>
+    <script type="text/javascript">
+        function calc() {
+            var oform = document.myform;
+            var len = oform.elements.length;
+            var allstr = "";
+            for (var i = 0; i < len; i++) {
+                if (oform.elements[i].checked) {
+                    var s = oform.elements[i].value;
+                    if (allstr != "") {
+                        allstr += "\r\n"
+                    }
+                    allstr += s;
+                }
+
+            }
+            document.myform.info.value = allstr;
+        }
+    </script>
+</head>
+<body>
+<form method="post" name="myform">
+    <textarea rows="6" name="info" cols="56"></textarea>
+
+    <div class="l"><input type="checkbox" name="c1" id="c1" value="aaaa"><label for="c1">aaaa</label>
+    </div>
+    <div class="l"><input type="checkbox" name="c2" id="c2" value="bbbb"><label for="c2">bbbb</label>
+    </div>
+    <div class="l"><input type="checkbox" name="c3" id="c3" value="cccc"><label for="c3">cccc</label>
+    </div>
+    <div class="l"><input type="checkbox" name="c4" id="c4" value="dddd"><label for="c4">dddd</label>
+    </div>
+</form>
+<input type="button" onclick="calc()" value="click" />
+</body>
+</html>

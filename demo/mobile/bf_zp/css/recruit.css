@@ -1,0 +1,632 @@
+/* 20141202 by 满春 */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    font: 14px/1.5 'simhei';
+    color: #fff;
+}
+
+.section {
+    position: relative;
+    /*overflow: hidden;*/
+    width: 100%;
+}
+
+/*招聘列表*/
+.section-seven {
+    background: #172d3b;
+}
+
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 14px 0 10px;
+    background: url("../img/recruit-icon-back.png") no-repeat 0 17px #172d3b;
+    background-size: 7px 13px;
+    font-size: 14px;
+    color: #fff;
+    text-indent: 14px;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.back :active {
+    outline: none;
+}
+
+.section-seven .recruit-title {
+    width: 290px;
+    height: 107px;
+    background: url("../img/page-07-title.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.section-seven .recruit-list h1 {
+    padding: 16px 0 8px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.section-seven .recruit-list h1 span {
+    display: inline-block;
+    margin-left: 6px;
+    padding-left: 15px;
+    background: url("../img/recruit-icon.png") no-repeat 0 8px;
+    background-size: 10px 12px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.recruit {
+    padding-top: 40px;
+}
+
+.recruit-item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #465e6c;
+}
+
+.recruit-info dt {
+    margin: 0 0 5px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.recruit-info dd {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.recruit-link {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    margin-top: 12px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 36px;
+    color: #334550;
+    text-align: center;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 招聘列表 end*/
+
+/* 招聘表单 */
+.recruit-detail-wrap {
+    width: 285px;
+    margin: 0 auto;
+}
+
+.recruit-detail-wrap h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.form-horizontal .form-group {
+    height: 36px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #2b4556;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.form-horizontal .control-label {
+    float: left;
+    width: 70px;
+    color: #fff;
+    text-align: left;
+}
+
+.control-label span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 5px 0 2px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*.form-horizontal .short .control-label {
+  width: 80px;
+  background-size: 20%;
+}*/
+.form-horizontal .icon-name {
+    background-image: url("../img/icon-name.jpg");
+}
+
+.form-horizontal .icon-mail {
+    height: 10px;
+    background-image: url("../img/icon-mailbox.jpg");
+}
+
+.form-horizontal .icon-tel {
+    width: 10px;
+    height: 14px;
+    background-image: url("../img/icon-tel.jpg");
+}
+
+.form-horizontal .icon-age {
+    background-image: url("../img/icon-age.jpg");
+}
+
+/*.form-horizontal .icon-address {
+  background-position: 0 -194px;
+}
+.form-horizontal .icon-experience {
+  background-position: 0 -241px;
+}*/
+.form-horizontal .control-div {
+    margin-left: 70px;
+}
+
+/*.form-horizontal .short .control-div {
+  margin-left: 80px;
+}*/
+.form-horizontal .no-border {
+    border-bottom: none;
+}
+
+/*input*/
+.form-horizontal .form-control {
+    display: block;
+    width: 210px;
+    height: 36px;
+    border: 0 none;
+    background: transparent;
+    color: #b6d5e8;
+}
+
+/*.form-horizontal .short .form-control {
+  width: 138px;
+}*/
+.experience-wrap {
+    margin: 0 -2px 3px 0;
+}
+
+.experience-wrap input {
+    float: left;
+    height: 23px;
+    margin-right: 2px;
+    border: 1px solid #3a5c72;
+    background: #0f222e;
+    font-size: 12px;
+    line-height: 23px;
+    color: #fff;
+    vertical-align: middle;
+    text-indent: 5px;
+}
+
+.experience-wrap input :placeholder {
+    color: #406176;
+}
+
+::-webkit-input-placeholder {
+    color: #406176;
+}
+
+.experience-wrap input :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #406176;
+}
+
+::-moz-placeholder {
+    color: #406176;
+}
+
+.company {
+    width: 122px;
+}
+
+.job {
+    width: 70px;
+}
+
+.years {
+    width: 38px;
+}
+
+.form-horizontal .add {
+    height: 26px;
+    line-height: 26px;
+}
+
+.form-horizontal .add .add-label {
+    background: none;
+    cursor: pointer;
+    color: #7099b2;
+    text-indent: 0;
+}
+
+.form-horizontal .add-label span {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.pt {
+    padding: 45px 0 16px;
+}
+
+.pt a {
+    margin-top: 0;
+}
+
+/* 招聘表单 end*/
+
+/* 招聘邮箱 */
+.mail-txt {
+    width: 172px;
+    height: 83px;
+    margin: 0 auto 55px;
+    padding-top: 117px;
+    background: url("../img/mail-box-txt.png") no-repeat center bottom;
+    background-size: 100%;
+}
+
+.mail-box {
+    width: 56px;
+    height: 102px;
+    margin: 0 auto;
+    background: url("../img/mail-box.png") no-repeat;
+    background-size: 100%;
+}
+
+.bf-logo {
+    display: block;
+    width: 102px;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+.bf-logo img {
+    height: 33px;
+    vertical-align: top;
+}
+
+.plane {
+    position: absolute;
+    left: 50%;
+    width: 33px;
+    height: 21px;
+    background: url("../img/plane-02.png") no-repeat;
+    background-size: 33px 21px;
+}
+
+.section-seven .plane {
+    top: 230px;
+    margin-left: -16px;
+}
+
+.section-seven.active .plane {
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    -webkit-animation: plane 12s linear infinite;
+    -moz-animation: plane 12s linear infinite;
+    -o-animation: plane 12s linear infinite;
+    animation: plane 12s linear infinite transform-origin : 50 % 50 %;
+}
+
+.pager {
+    position: absolute;
+    top: 51px;
+    left: 50%;
+    width: 54px;
+    height: 25px;
+    margin-left: 75px;
+    background: url("../img/pager.png") no-repeat;
+    background-size: 100%;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    -webkit-transform-origin: 50% -50px;
+    -moz-transform-origin: 50% -50px;
+    -ms-transform-origin: 50% -50px;
+    -o-transform-origin: 50% -50px;
+    -webkit-animation: Swing1 5s infinite;
+    -moz-animation: Swing1 5s infinite;
+    -ms-animation: Swing1 5s infinite;
+    -o-animation: Swing1 5s infinite;
+    animation: Swing1 5s infinite;
+}
+
+/* 纸的移动 */
+@-webkit-keyframes Swing1 {
+    0% {
+        -webkit-transform: rotate(-5deg);
+    }
+    50% {
+        -webkit-transform: rotate(5deg);
+    }
+    100% {
+        -webkit-transform: rotate(-5deg);
+    }
+}
+
+@-moz-keyframes Swing1 {
+    0% {
+        -moz-transform: rotate(-5deg);
+    }
+    50% {
+        -moz-transform: rotate(5deg);
+    }
+    100% {
+        -moz-transform: rotate(-5deg);
+    }
+}
+
+@-o-keyframes Swing1 {
+    0% {
+        -o-transform: rotate(-5deg);
+    }
+    50% {
+        -o-transform: rotate(5deg);
+    }
+    100% {
+        -o-transform: rotate(-5deg);
+    }
+}
+
+@keyframes Swing1 {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+/* 纸的移动 end */
+
+/* 飞机效果 */
+@-webkit-keyframes plane {
+    0% {
+        -webkit-transform: translate(10px, 10px);
+    }
+    20% {
+        -webkit-transform: translate(300px, -50px);
+    }
+    25% {
+        -webkit-transform: translate(300px, -50px) rotate(-35deg);
+    }
+    30% {
+        -webkit-transform: translate(300px, -50px) rotate(-85deg);
+    }
+    35% {
+        -webkit-transform: translate(300px, -50px) rotate(-135deg);
+    }
+    40% {
+        -webkit-transform: translate(300px, -50px) rotate(-185deg);
+    }
+    65% {
+        -webkit-transform: translate(10px, 10px) rotate(-185deg);
+    }
+    100% {
+        -webkit-transform: translate(10px, 10px);
+    }
+}
+
+@-moz-keyframes plane {
+    0% {
+        -moz-transform: translate(10px, 10px);
+    }
+    20% {
+        -moz-transform: translate(300px, -50px);
+    }
+    25% {
+        -moz-transform: translate(300px, -50px) rotate(-35deg);
+    }
+    30% {
+        -moz-transform: translate(300px, -50px) rotate(-85deg);
+    }
+    35% {
+        -moz-transform: translate(300px, -50px) rotate(-135deg);
+    }
+    40% {
+        -moz-transform: translate(300px, -50px) rotate(-185deg);
+    }
+    65% {
+        -moz-transform: translate(10px, 10px) rotate(-185deg);
+    }
+    100% {
+        -moz-transform: translate(10px, 10px);
+    }
+}
+
+@-o-keyframes plane {
+    0% {
+        -o-transform: translate(10px, 10px);
+    }
+    20% {
+        -o-transform: translate(300px, -50px);
+    }
+    25% {
+        -o-transform: translate(300px, -50px) rotate(-35deg);
+    }
+    30% {
+        -o-transform: translate(300px, -50px) rotate(-85deg);
+    }
+    35% {
+        -o-transform: translate(300px, -50px) rotate(-135deg);
+    }
+    40% {
+        -o-transform: translate(300px, -50px) rotate(-185deg);
+    }
+    65% {
+        -o-transform: translate(10px, 10px) rotate(-185deg);
+    }
+    100% {
+        -o-transform: translate(10px, 10px);
+    }
+}
+
+@keyframes plane {
+    0% {
+        transform: translate(10px, 10px);
+    }
+    20% {
+        transform: translate(300px, -50px);
+    }
+    25% {
+        transform: translate(300px, -50px) rotate(-35deg);
+    }
+    30% {
+        transform: translate(300px, -50px) rotate(-85deg);
+    }
+    35% {
+        transform: translate(300px, -50px) rotate(-135deg);
+    }
+    40% {
+        transform: translate(300px, -50px) rotate(-185deg);
+    }
+    65% {
+        transform: translate(10px, 10px) rotate(-185deg);
+    }
+    100% {
+        transform: translate(10px, 10px);
+    }
+}
+
+/* 飞机效果 end */
+
+/* 招聘邮箱 end */
+
+/*modal*/
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.bg04 {
+    background-color: #f07100;
+}
+
+/*横屏/竖屏*/
+.across-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 150px;
+    margin: -75px 0 0 -125px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.across-screen .phone {
+    position: relative;
+    display: block;
+    width: 72px;
+    height: 110px;
+    margin: 0 auto 10px;
+    background: url("../img/phone.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-animation: phone 1.5s ease-in infinite;
+    -moz-animation: phone 1.5s ease-in infinite;
+    -o-animation: phone 1.5s ease-in infinite;
+    animation: phone 1.5s ease-in infinite;
+}
+
+@-webkit-keyframes phone {
+    0% {
+        -webkit-transform: rotate(-90deg);
+    }
+    25% {
+        -webkit-transform: rotate(-90deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-90deg);
+    }
+}
+
+@-moz-keyframes phone {
+    0% {
+        -moz-transform: rotate(-90deg);
+    }
+    25% {
+        -moz-transform: rotate(-90deg);
+    }
+    50% {
+        -moz-transform: rotate(0deg);
+    }
+    75% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(-90deg);
+    }
+}
+
+@-o-keyframes phone {
+    0% {
+        -o-transform: rotate(-90deg);
+    }
+    25% {
+        -o-transform: rotate(-90deg);
+    }
+    50% {
+        -o-transform: rotate(0deg);
+    }
+    75% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(-90deg);
+    }
+}
+
+@keyframes phone {
+    0% {
+        transform: rotate(-90deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
