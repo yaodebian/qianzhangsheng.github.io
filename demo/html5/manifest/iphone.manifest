@@ -12,8 +12,8 @@ manifest.mp3
 
 # 需要在线的文件
 NETWORK:
-#index.php
+# index.php
 
 # 替代方案
 FALLBACK:
-#404.html
+# 404.html
