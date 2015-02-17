@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 
         //javascript检查纠错
         jshint: {
-            all: ['js/zepto.min.js']
+            all: ['ggzc/js/base.js','ggzc/js/list.js','ggzc/js/index.js']
         },
 
         //压缩js
@@ -77,9 +77,9 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         //相对路径
-                        cwd: 'img',
+                        cwd: 'kfc/img',
                         src: ['*.{gif,jpg,png}'],
-                        dest: 'dest'
+                        dest: 'kfc/dest'
                     }
                 ]
             }
