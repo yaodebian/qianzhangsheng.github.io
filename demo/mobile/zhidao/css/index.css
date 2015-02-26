@@ -168,7 +168,7 @@ header {
     bottom: 0;
     z-index: 0;
     overflow: hidden;
-    background: #e8e8e8 url("../img/bg_170c247.png") no-repeat 50% 50%;
+    background: #e8e8e8 url("../img/bg.png") no-repeat 50% 50%;
     background-size: cover
 }
 
@@ -182,7 +182,7 @@ header {
     right: -150px;
     width: 297px;
     height: 153px;
-    background: url("../img/ball1_189ec64.png") no-repeat
+    background: url("../img/ball1.png") no-repeat
 }
 
 .bg .ball2 {
@@ -191,7 +191,7 @@ header {
     left: -109px;
     width: 218px;
     height: 220px;
-    background: url("../img/ball2_22a7851.png") no-repeat
+    background: url("../img/ball2.png") no-repeat
 }
 
 .music {
@@ -1714,10 +1714,10 @@ header {
 
 .page4 .fang, .page1 .c2, .page2 .c4, .page2 .c2, .page2 .c6, .page4 .c5, .page6 .c1, .page4 .c7, .page4 .c2, .page2 .c3, .page4 .c8, .page1 .c1, .page5 .c1, .page5 .asker .ask-avar, .page5 .answer3 .ans-avar, .page1 .c5, .page5 .answer2 .ans-avar, .page1 .c8, .page5 .answer1 .ans-avar, .page3 .c1, .page2 .c1, .page1 .c4, .page4 .c3, .page4 .c9, .page3 .c2, .page3 .c8 .avar, .page6 .c2, .page4 .c6, .page3 .c5, .page2 .c8 {
     background-size: 646px 562.5px;
-    background-image: url("../img/wap_0.5_z_8deb9e1.png")
+    background-image: url("../img/wap_0.5.png")
 }
 
 .page4 .c11, .page5 .c8, .page4 .c1, .page2 .c7, .page1 .c9, .page3 .c3, .page6 .c3, .music .btn, .page2 .c5, .page3 .c7, .page1 .c7, .page5 .c6, .page2 .c9, .page4 .c13, .page1 .c3, .page3 .c4, .page4 .c10, .page4 .c12, .page5 .c7, .page3 .c6, .page2 .c10, .page5 .c9, .page1 .c6, .page1 .start b {
     background-size: 646px 562.5px;
-    background-image: url("../img/wap_0.5_z_8deb9e1.png")
+    background-image: url("../img/wap_0.5.png")
 }
