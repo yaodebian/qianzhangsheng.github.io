@@ -1,6 +1,6 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, hgroup, nav, section, article, aside, footer, figure, figcaption, menu, button {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 body {
@@ -12,25 +12,25 @@ body {
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    outline: 0
+    outline: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
-    font-weight: 400
+    font-weight: 400;
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 fieldset, img {
-    border: 0
+    border: 0;
 }
 
 li {
-    list-style: none
+    list-style: none;
 }
 
 input, button, textarea, select {
@@ -40,29 +40,29 @@ input, button, textarea, select {
     border: 0;
     background: 0 0;
     -webkit-appearance: none;
-    outline: 0
+    outline: 0;
 }
 
 button:focus, input:focus, select:focus, textarea:focus {
     outline: 0;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
     -webkit-touch-callout: none;
     text-decoration: none;
     color: #00a5e0;
-    outline: 0
+    outline: 0;
 }
 
 em, i {
-    font-style: normal
+    font-style: normal;
 }
 
 em {
-    color: #f28c48
+    color: #f28c48;
 }
 
 ::-webkit-input-placeholder {
-    color: #999
+    color: #999;
 }
