@@ -5,7 +5,7 @@ var scr_a = null;
 $.ajax({
     url: "input_form.html",
     cache: false,
-    success: function(html) {
+    success: function (html) {
         $(".content-form").append(html);
         //这里scrollHeight = offsetHeight,所以忙活了一个中午取值都不对
         //scr_a = document.getElementById("wrapper").scrollHeight;
@@ -17,13 +17,13 @@ $.ajax({
 
 //scroll ready
 var hasShow = false;
-$(window).bind("scroll", function() {
+$(window).bind("scroll", function () {
     if (hasShow) {
         $(window).unbind("scroll");
         return;
     }
     //Ajax请求开始显示
-    $("#loading").ajaxStart(function() {
+    $("#loading").ajaxStart(function () {
         $(this).show();
     });
     var t = $(document).scrollTop();
@@ -31,11 +31,11 @@ $(window).bind("scroll", function() {
     if (t > scr_a) {
         hasShow = true;
         //延迟2秒加载测试Ajax效果
-        setTimeout(function() {
+        setTimeout(function () {
             $.ajax({
                 url: "input_form.html",
                 cache: false,
-                success: function(html) {
+                success: function (html) {
                     $(".content-form").append(html);
                     //scr_b = document.documentElement.offsetHeight - document.documentElement.clientHeight - 1;
                     //console.log(scr_b);
@@ -44,7 +44,7 @@ $(window).bind("scroll", function() {
         }, 2000);
     }
     //Ajax请求结束隐藏
-    $("#loading").ajaxStop(function() {
+    $("#loading").ajaxStop(function () {
         $(this).hide();
     });
 });

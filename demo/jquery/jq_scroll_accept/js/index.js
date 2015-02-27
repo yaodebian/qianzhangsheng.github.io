@@ -1,10 +1,3 @@
-/**
- * Created by JetBrains WebStorm.
- * User: ulear
- * Date: 12-2-27
- * Time: 上午9:23
- * To change this template use File | Settings | File Templates.
- */
 $(function () {
     //先取得 #terms 及其各种高度
     //判断是否停用 $submit

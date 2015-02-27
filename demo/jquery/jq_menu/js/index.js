@@ -1,10 +1,3 @@
-/**
- * Created by JetBrains WebStorm.
- * User: ulear
- * Date: 12-2-20
- * Time: 上午10:23
- * To change this template use File | Settings | File Templates.
- */
 $(function () {
     //帮 #menu li 加上 hover 事件
     $("#menu li").hover(function () {

@@ -94,7 +94,7 @@ legend {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-    font-family: "Arial Black";
+    font-family: "Arial Black", sans-serif;
     display: block;
     width: 26px;
     height: 28px;
@@ -104,7 +104,7 @@ legend {
 
 #cp_pics_nav a:hover, #cp_pics_nav a.current {
     color: #f6e50f;
-    background: url(../img/bg_index.gif) 50% 50% no-repeat;
+    background: url("../img/bg_index.gif") 50% 50% no-repeat;
 }
 
 #cp_pics {

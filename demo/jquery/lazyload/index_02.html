@@ -7,16 +7,14 @@
     <script type="text/javascript" src="../../jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.lazyload.mini.js"></script>
     <script type="text/javascript">
-        /*图片延迟加载 start*/
         $(function () {
             $("ul img").lazyload({
                 placeholder: "images/loading.gif",	//onload效果
-                threshold: 0,	//加载时显示多少像素
-                effect: "fadeIn",	//渐变显示
+                threshold: 0,	                    //加载时显示多少像素
+                effect: "fadeIn",	                //渐变显示
                 container: $("#container")
             });
         });
-        /*图片延迟加载 end*/
     </script>
     <style type="text/css">
         li {
