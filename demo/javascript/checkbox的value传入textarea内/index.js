@@ -6,7 +6,7 @@ function calc() {
         if (oform.elements[i].checked) {
             var s = oform.elements[i].value;
             if (allstr != "") {
-                allstr += "\r\n"
+                allstr += "\r\n";
             }
             allstr += s;
         }

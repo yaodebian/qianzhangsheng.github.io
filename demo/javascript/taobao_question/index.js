@@ -1,5 +1,5 @@
-var r = document.getElementsByTagName("input"),
-    imgs = document.getElementsByTagName("img");
+var r = document.getElementsByTagName("input");
+var imgs = document.getElementsByTagName("img");
 for (var i = 0, Len = r.length; i < Len; i++) {
     (function (i) {
         var el = r[i], prev;
