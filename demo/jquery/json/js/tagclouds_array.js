@@ -7,8 +7,8 @@
             //console.log(key + " : " + val);
         });
         $('<ul/>', {
-            'class':'',
-            html:items.join('')
+            'class': '',
+            html: items.join('')
         }).appendTo('.tags');
 
         //列出每个 li 的的内容

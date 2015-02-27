@@ -7,8 +7,8 @@
         });
 
         $('<ul/>', {
-            'class':'',
-            html:items.join('')
+            'class': '',
+            html: items.join('')
         }).appendTo('.tags');
     });
 })(jQuery);

@@ -1,29 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<link rel="stylesheet" href="cssreset.css" type="text/css" />
-<style>
-#load { width:135px; height:50px; position:absolute; top:40%; left:40%; font-size:36px; text-align:right; }
-#load span { color:#BABABA; }
-</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
-<script>
-var num = 1;
-var f_load;
-function loadfn(){
-	if(num < 100){
-		num++;
-		$("div#load span").html("..." + num + "%");
-	}else if(num == 100){
-		$("div#load span").html("..." + num + "%").css({"color":"#b10000"});
-		location.href = "http://www.baidu.com/";
-		clearInterval(f_load);
-	}
-}
-f_load = setInterval("loadfn()",50);
-</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="cssreset.css" type="text/css" />
+    <style>
+        #load {
+            width: 135px;
+            height: 50px;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: 36px;
+            text-align: right;
+        }
+
+        #load span {
+            color: #BABABA;
+        }
+    </style>
+    <script src="../../../jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <div id="load"><span></span></div>

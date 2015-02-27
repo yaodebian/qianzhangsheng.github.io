@@ -1,46 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<link rel="stylesheet" href="cssreset.css" type="text/css" />
-<style>
-#num { width:135px; height:50px; position:absolute; top:40%; left:40%; font-size:36px; text-align:right; color:#BABABA; }
-#num span { color:#BABABA; }
-</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
-<script language="javascript">  
-$(function(){
-	function fn_load(count){
-		window.setTimeout(function(){
-			count++;
-			if(count < 20){
-				$('#num span').attr('innerHTML', "..." + count + "%");				
-				fn_load(count);
-			}else if(count < 40){
-				$('#num span').css({"color":"#b88686"});
-				$('#num span').attr('innerHTML', "..." + count + "%");				
-				fn_load(count);
-			}else if(count < 60){
-				$('#num span').css({"color":"#b74e4e"});
-				$('#num span').attr('innerHTML', "..." + count + "%");				
-				fn_load(count);
-			}else if(count < 80){
-				$('#num span').css({"color":"#b52121"});
-				$('#num span').attr('innerHTML', "..." + count + "%");				
-				fn_load(count);
-			}else if(count < 100){
-				$('#num span').css({"color":"#ca0000"});
-				$('#num span').attr('innerHTML', "..." + count + "%");				
-				fn_load(count);
-			}else{
-				location.href="http://www.baidu.com/";
-			}
-		}, 50);
-	}
-	fn_load(0);
-});
-</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <style>
+        #num {
+            width: 135px;
+            height: 50px;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: 36px;
+            text-align: right;
+            color: #BABABA;
+        }
+
+        #num span {
+            color: #BABABA;
+        }
+    </style>
+    <script src="../../../jquery-1.11.2.min.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <div id="num"><span></span></div>

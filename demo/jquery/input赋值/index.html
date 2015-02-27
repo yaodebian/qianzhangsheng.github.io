@@ -1,48 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
 </head>
 <body>
-	<table>
-		<tr>
-            <td rowspan="2" class="D_td_t_l"><span class="red">*</span><span>企业填报数据包含海关代码有：</span></td>
-            <td class="no_border"><input id="hgdm" type="text" class="D_text_a" /></td>
-            <td class="D_td_b no_border"><input id="hgdm_plus" type="button" class="search_plus" /></td>
-            <td class="D_td_b no_border"></td>
-            <td class="D_td_b no_border"></td>
-        </tr>
-        <tr>
-            <td colspan="2"><input id="hgdm_val" type="text" class="D_text_b" /></td>
-            <td class="D_td_b"><input id="hgdm_m" type="button" class="search_m" /></td>
-            <td class="D_td_b"></td>
-        </tr>
-	</table>
-	<script src="../jquery-1.10.2.min.js"></script>
-	<script>
-	//企业填报数据包含海关代码有 赋值
-	$("#hgdm_plus").on("click", function() {
-		var hgdm = $("#hgdm");
-		var hgdm_val = $("#hgdm_val");
-		if (hgdm.val() != "") {
-			if (hgdm_val.val() == "") {
-				hgdm_val.val(function(i, v) {
-					return v + hgdm.val();
-				});
-				hgdm.val("");
-			} else {
-				hgdm_val.val(function(i, v) {
-					return v + "," + hgdm.val();
-				});
-				hgdm.val("");
-			}
-		}
-	});
-
-	$("#hgdm_m").on("click", function() {
-		$("#hgdm_val").val("");
-	});
-	</script>
+<table>
+    <tr>
+        <td rowspan="2" class="D_td_t_l"><span class="red">*</span><span>企业填报数据包含海关代码有：</span></td>
+        <td class="no_border"><input id="hgdm" type="text" class="D_text_a" /></td>
+        <td class="D_td_b no_border"><input id="hgdm_plus" type="button" class="search_plus" /></td>
+        <td class="D_td_b no_border"></td>
+        <td class="D_td_b no_border"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input id="hgdm_val" type="text" class="D_text_b" /></td>
+        <td class="D_td_b"><input id="hgdm_m" type="button" class="search_m" /></td>
+        <td class="D_td_b"></td>
+    </tr>
+</table>
+<script src="../../jquery-1.11.2.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

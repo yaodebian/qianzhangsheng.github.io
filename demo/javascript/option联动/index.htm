@@ -1,64 +1,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
 </head>
 <body>
 <div id="selectSub">
-  <select onchange="showSelect(this.value);">
-    <option value="0">选项一</option>
-    <option value="1">选项二</option>
-    <option value="2">选项三</option>
-    <option value="3">选项四</option>
-  </select>
-  <div id="c00">
-    <input type="checkbox" name="ck00" />
-    <label>选项1.1</label>
-    <input type="checkbox" name="ck00" />
-    <label>选项1.2</label>
-    <input type="checkbox" name="ck00" />
-    <label>选项1.3</label>
-    <input type="checkbox" name="ck00" />
-    <label>选项1.4</label>
-  </div>
-  <div id="c01">
-    <input type="checkbox" name="ck01" />
-    <label>选项2.1</label>
-    <input type="checkbox" name="ck01" />
-    <label>选项2.2</label>
-    <input type="checkbox" name="ck01" />
-    <label>选项2.3</label>
-  </div>
-  <div id="c02">
-    <input type="checkbox" name="ck02" />
-    <label>选项3.1</label>
-    <input type="checkbox" name="ck02" />
-    <label>选项3.2</label>
-    <input type="checkbox" name="ck02" />
-    <label>选项3.3</label>
-  </div>
-  <div id="c03">
-    <input type="checkbox" name="ck03" />
-    <label>选项4.1</label>
-    <input type="checkbox" name="ck03" />
-    <label>选项4.2</label>
-    <input type="checkbox" name="ck03" />
-    <label>选项4.3</label>
-  </div>
+    <select onchange="showSelect(this.value);">
+        <option value="0">选项一</option>
+        <option value="1">选项二</option>
+        <option value="2">选项三</option>
+        <option value="3">选项四</option>
+    </select>
+
+    <div id="c00">
+        <input type="checkbox" name="ck00" />
+        <label>选项1.1</label>
+        <input type="checkbox" name="ck00" />
+        <label>选项1.2</label>
+        <input type="checkbox" name="ck00" />
+        <label>选项1.3</label>
+        <input type="checkbox" name="ck00" />
+        <label>选项1.4</label>
+    </div>
+    <div id="c01">
+        <input type="checkbox" name="ck01" />
+        <label>选项2.1</label>
+        <input type="checkbox" name="ck01" />
+        <label>选项2.2</label>
+        <input type="checkbox" name="ck01" />
+        <label>选项2.3</label>
+    </div>
+    <div id="c02">
+        <input type="checkbox" name="ck02" />
+        <label>选项3.1</label>
+        <input type="checkbox" name="ck02" />
+        <label>选项3.2</label>
+        <input type="checkbox" name="ck02" />
+        <label>选项3.3</label>
+    </div>
+    <div id="c03">
+        <input type="checkbox" name="ck03" />
+        <label>选项4.1</label>
+        <input type="checkbox" name="ck03" />
+        <label>选项4.2</label>
+        <input type="checkbox" name="ck03" />
+        <label>选项4.3</label>
+    </div>
 </div>
-<script>
-var get_select = document.getElementById("selectSub");
-var grow = get_select.getElementsByTagName("option").length;//组数
-var showGrow = 0;//已打开组
-showSelect(showGrow);
-function showSelect(id){
-	for(var i=0;i<grow;i++){
-		document.getElementById("c0" + i).style.display = "none";
-	}
-	document.getElementById("c0" + id).style.display = "block";
-	showGrow = id;
-}
-</script>
+<script src="index.js"></script>
 </body>
 </html>

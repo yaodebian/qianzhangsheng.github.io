@@ -1,18 +1,22 @@
 #tabs {
-	list-style: none;
-	overflow: hidden;
+    list-style: none;
+    overflow: hidden;
 }
+
 #tabs li {
-	float: left;
-	padding: 10px;
-	cursor: pointer;
+    float: left;
+    padding: 10px;
+    cursor: pointer;
 }
+
 #tabs li.active {
-	color: red;
+    color: red;
 }
+
 #main div {
-	display: none;
+    display: none;
 }
+
 #main .active {
-	display: block;
+    display: block;
 }

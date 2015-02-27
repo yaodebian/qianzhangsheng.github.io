@@ -1,102 +1,52 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <title>radiobox</title>
-  <link rel="stylesheet" href="reset.css" />
-  <style type="text/css">
-    div {
-      width: 40px;
-      height: 40px;
-      margin: 10px;
-      float: left;
-    }
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>radiobox</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style type="text/css">
+        div {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            float: left;
+        }
 
-    label {
-      position: relative;
-    }
+        label {
+            position: relative;
+        }
 
-    img {
-      position: absolute;
-      z-index: 9999;
-      cursor: pointer;
-    }
+        img {
+            position: absolute;
+            z-index: 9999;
+            cursor: pointer;
+        }
 
-    input[type=radio] {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      z-index: 1;
-    }
+        input[type=radio] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 1;
+        }
 
-    img.current {
-      border: 2px solid #ff0000;
-    }
-  </style>
+        img.current {
+            border: 2px solid #ff0000;
+        }
+    </style>
 </head>
 <body>
 <div>
-  <label for="radio_0"><img src="img_01.gif" alt="img" width="40" height="40" /><input id="radio_0" type="radio" name="test" value="" /></label>
+    <label for="radio_0"><img src="img_01.gif" alt="img" width="40" height="40" /><input id="radio_0" type="radio" name="test" value="" /></label>
 </div>
 <div>
-  <label for="radio_1"><img src="img_02.gif" alt="img" width="40" height="40" /><input id="radio_1" type="radio" name="test" value="" /></label>
+    <label for="radio_1"><img src="img_02.gif" alt="img" width="40" height="40" /><input id="radio_1" type="radio" name="test" value="" /></label>
 </div>
 <div>
-  <label for="radio_2"><img src="img_03.gif" alt="img" width="40" height="40" /><input id="radio_2" type="radio" name="test" value="" /></label>
+    <label for="radio_2"><img src="img_03.gif" alt="img" width="40" height="40" /><input id="radio_2" type="radio" name="test" value="" /></label>
 </div>
-<script type="text/javascript">
-  var r = document.getElementsByTagName("input"),
-      imgs = document.getElementsByTagName("img");
-
-  for (var i = 0, Len = r.length; i < Len; i++) {
-    (function (i) {
-      var el = r[i], prev;
-
-      el.onclick = function () {
-        prev = getPrev(el);
-        for (var j = 0, len = imgs.length; j < len; j++) {
-          removeClass(imgs[j], "current");
-        }
-
-        addClass(prev, "current");
-      }
-    })(i);
-  }
-
-  function addClass(obj, str) {
-    var re = new RegExp("\\b" + str + "\\b", "gi");
-    var _class = obj.className;
-    if (!re.test(_class)) {
-      obj.className += " " + str + " ";
-    }
-  }
-
-  function removeClass(obj, str) {
-    var re = new RegExp("\\b" + str + "\\b", "gi");
-    var _class = obj.className;
-    if (re.test(_class)) {
-      obj.className = obj.className.replace(str, " ");
-    }
-  }
-
-  function getPrev(obj) {
-    var prevNode = obj.previousSibling;
-
-    if (!prevNode)return;
-    while (true) {
-      if (prevNode.nodeType == 1) {
-        break;
-      } else {
-        if (prevNode.previousSibling) {
-          prevNode = prevNode.previousSibling;
-        }
-      }
-    }
-    return prevNode;
-  }
-</script>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
