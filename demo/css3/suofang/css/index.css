@@ -83,10 +83,10 @@ input, select {
 
 /* 内容主体部分 */
 .wrapper {
-    width: 920px;
+    width: 980px;
     height: 300px;
     overflow: hidden;
-    -webkit-transform: scale(1);
+    margin: 10px;
 }
 
 .bg {
