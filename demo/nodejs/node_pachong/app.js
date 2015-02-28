@@ -1,5 +1,6 @@
 /**
  * Created by qianzhangsheng on 14-11-3.
+ * nodejs写的网络爬虫
  */
 var express = require('express');
 var cheerio = require('cheerio');

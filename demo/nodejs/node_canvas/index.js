@@ -1,5 +1,6 @@
 /**
  * Created by qianzhangsheng on 14-11-3.
+ * 把canvas通过base64保存为png图片
  */
 var server = require("./server");
 var router = require("./router");
