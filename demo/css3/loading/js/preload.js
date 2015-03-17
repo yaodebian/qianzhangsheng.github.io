@@ -103,6 +103,7 @@
         if (typeof r === "function") {
             r.call(sf);
         }
+        //加载完成隐藏
         setTimeout(function () {
             document.querySelector('#loader').style.display = 'block';
         }, 2000);
