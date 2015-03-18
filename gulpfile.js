@@ -4,6 +4,7 @@ var pngquant = require('imagemin-pngquant');
 var jshint = require('gulp-jshint');
 var minifyCSS = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
 gulp.task('imagemin', function () {
     return gulp.src('demo/css3/loading/img/*')
@@ -28,7 +29,13 @@ gulp.task('minify-css', function () {
 });
 
 gulp.task('compress', function () {
-    return gulp.src('demo/css3/loading/js/*.js')
+    return gulp.src(['demo/browserify/hello.js', 'demo/browserify/index.js', 'demo/browserify/test.js'])
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('scripts', function () {
+    return gulp.src('dist/js/*.js')
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('dist/'));
 });
