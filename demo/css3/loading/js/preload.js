@@ -105,7 +105,7 @@
         }
         //加载完成隐藏
         setTimeout(function () {
-            document.querySelector('#loader').style.display = 'block';
+            document.querySelector('#loader').style.display = 'none';
         }, 2000);
     };
     window.preload = p;

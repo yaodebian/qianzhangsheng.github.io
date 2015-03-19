@@ -58,7 +58,7 @@
 <script>
     //模块需要loading.css, preload.js, img下的图片资源
     //模块自身的图片路径写死在模块代码里，如果目录层级结构与现在不同请自行修改，否则可能会有问题
-    new preload({
+    var porLoad = new preload({
         'items': window.oPageConfig.aImgItems,  //需要加载的图片列表
         'prefix': '',                           //统一前缀,插件会自动补齐，默认为空(建议使用)
         'dev': false,                           //是否开发模式，ture时直接跳过加载动画，默认false
