@@ -22,13 +22,6 @@
     z-index: 100;
 }
 
-.m-loading-icon .loading-message {
-    margin-top: 76px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .m-loading-icon .spinner {
     position: relative;
     top: 10px;
@@ -37,7 +30,6 @@
 
 .m-loading-icon .cubemove {
     -webkit-animation: cubemove 2s infinite ease-in-out;
-    animation: cubemove 2s infinite ease-in-out;
 }
 
 .m-loading-icon .cube1, .m-loading-icon .cube2, .m-loading-icon .cube3, .m-loading-icon .cube4 {
@@ -77,4 +69,11 @@
     100% {
         -webkit-transform: rotate(-360deg);
     }
+}
+
+.m-loading-icon .loading-message {
+    margin-top: 76px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
