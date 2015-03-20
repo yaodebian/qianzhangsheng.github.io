@@ -6,7 +6,6 @@
     z-index: 9999;
     background: #FFF;
     opacity: 1;
-    top: 60px;
 }
 
 .m-loading-icon .center {
@@ -27,11 +26,13 @@
     margin-top: 76px;
     position: absolute;
     top: 0;
-    left: 6px;
+    left: 0;
 }
 
 .m-loading-icon .spinner {
     position: relative;
+    top: 10px;
+    left: 29px;
 }
 
 .m-loading-icon .cubemove {
