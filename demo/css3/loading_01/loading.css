@@ -1,0 +1,105 @@
+.m-loading-icon {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    background: #FFF;
+    opacity: 1;
+    top: 60px;
+}
+
+.m-loading-icon .center {
+    top: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    font-size: 1em;
+    text-align: center;
+    z-index: 100;
+}
+
+.m-loading-icon .loading-message {
+    margin-top: 76px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+}
+
+.m-loading-icon .spinner {
+    position: relative;
+}
+
+.m-loading-icon .cubemove {
+    -webkit-animation: cubemove 2s infinite ease-in-out;
+    animation: cubemove 2s infinite ease-in-out;
+}
+
+.m-loading-icon .cube1, .m-loading-icon .cube2, .m-loading-icon .cube3, .m-loading-icon .cube4 {
+    background-color: #1F8DD6;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.m-loading-icon .cube2 {
+    -webkit-animation-delay: -.5s;
+    animation-delay: -.5s;
+    background-color: #FBB44C;
+}
+
+.m-loading-icon .cube3 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+    background-color: #FC797A;
+}
+
+.m-loading-icon .cube4 {
+    -webkit-animation-delay: -1.5s;
+    animation-delay: -1.5s;
+    background-color: #2ABB9B;
+}
+
+@-webkit-keyframes cubemove {
+    25% {
+        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    }
+    50% {
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    }
+    75% {
+        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes cubemove {
+    25% {
+        transform: translateX(42px) rotate(-90deg) scale(0.5);
+        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    }
+    50% {
+        transform: translateX(42px) translateY(42px) rotate(-179deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    }
+    50.1% {
+        transform: translateX(42px) translateY(42px) rotate(-180deg);
+        -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    }
+    75% {
+        transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+        -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    }
+    100% {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
