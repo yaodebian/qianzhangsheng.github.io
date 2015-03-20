@@ -51,19 +51,16 @@
 
 .m-loading-icon .cube2 {
     -webkit-animation-delay: -.5s;
-    animation-delay: -.5s;
     background-color: #FBB44C;
 }
 
 .m-loading-icon .cube3 {
     -webkit-animation-delay: -1s;
-    animation-delay: -1s;
     background-color: #FC797A;
 }
 
 .m-loading-icon .cube4 {
     -webkit-animation-delay: -1.5s;
-    animation-delay: -1.5s;
     background-color: #2ABB9B;
 }
 
