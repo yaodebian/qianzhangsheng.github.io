@@ -58,7 +58,7 @@
 
 @-webkit-keyframes cubemove {
     25% {
-        -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+        -webkit-transform: translateX(42px) translateY(0px) rotate(-90deg) scale(0.5);
     }
     50% {
         -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
