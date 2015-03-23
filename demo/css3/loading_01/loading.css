@@ -76,8 +76,8 @@
 }
 
 .m-loading-icon .loading-message {
-    margin-top: 76px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: inline-block;
+    margin-top: 80px;
+    width: 120px;
+    text-align: center;
 }
