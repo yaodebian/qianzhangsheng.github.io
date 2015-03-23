@@ -33,7 +33,6 @@
 }
 
 .m-loading-icon .cube1, .m-loading-icon .cube2, .m-loading-icon .cube3, .m-loading-icon .cube4 {
-    background-color: #1F8DD6;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -41,8 +40,13 @@
     left: 0;
 }
 
+.m-loading-icon .cube1 {
+    -webkit-animation-delay: 0s;
+    background: #1F8DD6;
+}
+
 .m-loading-icon .cube2 {
-    -webkit-animation-delay: -.5s;
+    -webkit-animation-delay: -0.5s;
     background-color: #FBB44C;
 }
 
