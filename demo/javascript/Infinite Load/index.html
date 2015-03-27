@@ -54,9 +54,6 @@
         var next = function () {
             var position = el.getBoundingClientRect().top;
             var winHeight = window.innerHeight;
-
-            console.log(position);
-
             if (position - before <= winHeight) {
                 callback(next, el);
             }
