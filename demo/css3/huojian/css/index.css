@@ -88,6 +88,10 @@ body {
 
 @-webkit-keyframes pulse {
     0% {
+        -webkit-transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
+        transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
+    }
+    25% {
         -webkit-transform: scale3d(1, 1, 1) translateY(0px);
         transform: scale3d(1, 1, 1) translateY(0px);
     }
@@ -95,14 +99,22 @@ body {
         -webkit-transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
         transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
     }
-    100% {
+    75% {
         -webkit-transform: scale3d(1, 1, 1) translateY(0px);
         transform: scale3d(1, 1, 1) translateY(0px);
+    }
+    100% {
+        -webkit-transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
+        transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
     }
 }
 
 @keyframes pulse {
     0% {
+        -webkit-transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
+        transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
+    }
+    25% {
         -webkit-transform: scale3d(1, 1, 1) translateY(0px);
         transform: scale3d(1, 1, 1) translateY(0px);
     }
@@ -110,9 +122,13 @@ body {
         -webkit-transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
         transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
     }
-    100% {
+    75% {
         -webkit-transform: scale3d(1, 1, 1) translateY(0px);
         transform: scale3d(1, 1, 1) translateY(0px);
+    }
+    100% {
+        -webkit-transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
+        transform: scale3d(1.15, 1.15, 1.15) translateY(3px);
     }
 }
 
