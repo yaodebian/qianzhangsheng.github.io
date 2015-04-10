@@ -12,13 +12,12 @@
 
  - 钱张盛/男/1985
  - 本科/浙江工业大学 计算机科学与技术专业
- - 工作年限：5年
+ - 工作年限：6年
  - 微博：[@努力的小猩猩君](http://weibo.com/hzwdqzs/)
- - 技术博客：http://www.cnblogs.com/qzsonline/
  - Github： https://github.com/qianzhangsheng
 
- - 期望职位：Web前端程序员
- - 期望薪资：月薪6.5k～7K，特别喜欢的公司可例外
+ - 期望职位：Web前端工程师
+ - 期望薪资：月薪8k～10K，特别喜欢的公司可例外
  - 期望城市：杭州
 
 ---
@@ -57,6 +56,9 @@
 
 项目都放在我的Github上了，都带有项目的线上链接。
 
+
+## 杭州边锋网络技术有限公司
+
 ---
 
 # 技能清单
@@ -64,11 +66,12 @@
 以下均为我熟练使用的技能
 
 - Web开发：HTML/HTML 5/CSS/CSS 3/Javascript
-- 前端框架：Bootstrap/jQuery Mobile/requireJS
-- 前端类库：jQuery
-- 前端工具：Grunt
-- 前端开发工具：WebStorm/Sublime/Nginx/PhotoShop
-- 版本管理：SVN/Git/CVS
+- 前端框架：Bootstrap/jQuery Mobile/requireJS/AngularJS
+- 前端类库：jQuery/Zepto
+- 前端工具：Grunt/Gulp
+- 前端开发工具：WebStorm/Sublime/PhotoShop
+- 静态服务器：Nginx
+- 版本管理：SVN/Git/CVS/Github
 
 
 
