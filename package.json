@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "dependencies": {
     "gulp-imagemin": "^2.2.1",
-    "browserify": "^9.0.3",
     "gulp-concat": "^2.5.2",
     "gulp-minify-css": "^1.0.0",
     "gulp": "^3.8.11",
