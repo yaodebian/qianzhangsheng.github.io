@@ -1,0 +1,1 @@
+var isWeixin = (/MicroMessenger/i).test(window.navigator.userAgent);
